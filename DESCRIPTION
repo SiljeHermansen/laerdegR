@@ -1,0 +1,11 @@
+Package: laerdegR
+Type: Package
+Title: Stottepakke Til "Laer Deg R"
+Version: 0.1.0
+Author: Silje Synnove Lyder Hermansen
+Maintainer: Silje Synnove Lyder Hermansen <s.s.l.hermansen@jus.uio.no>
+Description: Data og oppgavelosninger til "Laer deg R" (2019).
+License: GPL-3 | file LICENSE
+Encoding: latin1
+LazyData: yes
+Imports: car (>= 3.0-2)
