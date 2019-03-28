@@ -37,5 +37,4 @@ fig9.1<-function(){
 
   #Tilbakestill de grafiske instillingene
   par(mfrow=c(1,1))
-
 }
