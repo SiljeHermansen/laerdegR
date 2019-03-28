@@ -1,6 +1,5 @@
 \name{fig10.1}
 \alias{fig10.1}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Figur 10.1
 }
@@ -14,7 +13,7 @@ fig10.1()
 \author{
 Silje Synnove Lyder Hermansen
 }
-\example{
+\examples{
   #Laste inn data
   data(kap10)
   kap10 <- kap10
@@ -30,7 +29,7 @@ Silje Synnove Lyder Hermansen
 
   #Prediksjoner
   preds <- predict(mod,
-                   se.fit = T,
+                   se.fit = TRUE,
                    newdata = nyedata)
 
   lav <- preds$fit-1.96*preds$se.fit

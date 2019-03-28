@@ -1,6 +1,6 @@
 oppg6.5<-function(){
   #Last inn data
-  data(kap6)
+  data(kap6, envir = environment())
   kap6 <- kap6
 
   #Opprett vektor:

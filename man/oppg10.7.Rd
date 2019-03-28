@@ -1,6 +1,6 @@
 \name{oppg10.7}
 \alias{oppg10.7}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Oppgave 10.7
 }
@@ -11,33 +11,13 @@ I hvor stor andel av tilfellene predikerer modellen riktig? Hvor stor andel av d
 oppg10.7()
 }
 
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
-\value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-}
-\references{
-%% ~put references to the literature/web site here ~
-}
 \author{
 Silje Synnøve Lyder Hermansen
 }
-\note{
-%%  ~~further notes~~
-}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
   data(kap10)
+  kap10 <- kap10
 
   #Partivalg modellert som funksjon av inntekt.
   mod2<-glm(formula=FrP~Skepsis+Utgjevn+Inntekt,

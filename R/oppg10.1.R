@@ -1,5 +1,6 @@
 oppg10.1<-function(){
-  data(kap10)
+  data(kap10, envir = environment())
+  kap10 <- kap10
 
   #Partivalg modellert som funksjon av skepsis og utgjevn.
   mod1<-glm(formula=FrP~Skepsis+Utgjevn,

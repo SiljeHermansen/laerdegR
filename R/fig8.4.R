@@ -1,6 +1,6 @@
 fig8.4<-function(){
   #Last inn data
-  data(kap8)
+  data(kap8, envir = environment())
   kap8 <- kap8
 
   #Etimer modell

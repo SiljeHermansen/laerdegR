@@ -1,6 +1,6 @@
 oppg9.2<-function(){
   #Last inn data
-  data(kap9)
+  data(kap9, envir = environment())
   kap9 <- kap9
 
   #Utvid modell

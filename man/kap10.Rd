@@ -23,20 +23,16 @@ Datasett med norske respondenter fra 2014 som hevdet å ha stemt et av regjerings
     \item{\code{Utdanning}}{en tellevariabel. Indikerer år med skolegang (\code{eduyrs})}
   }
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
+
 \source{
 ESS Round 7: European Social Survey Round 7 Data (2014). Data file edition 2.1. NSD - Norwegian Centre for Research Data, Norway - Data Archive and distributor of ESS data for ESS ERIC.
 
 Tilgjengelig på: \url{http://www.europeansocialsurvey.org/data/download.html?r=7}
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
+
 }
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
+
 \examples{
 data(kap10)
-%## maybe str(kap7) ; plot(kap7) ...
+head(kap10)
 }
 

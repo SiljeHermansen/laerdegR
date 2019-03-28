@@ -1,5 +1,5 @@
 oppg7.1<-function(){
-  data(kap7)
+  data(kap7, envir = environment())
   kap7 <- kap7
 
   mod1<-lm(formula=Skepsis~Prekaritet,

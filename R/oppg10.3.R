@@ -1,5 +1,6 @@
 oppg10.3<-function(){
-  data(kap10)
+  data(kap10, envir = environment())
+  kap10 <- kap10
 
   #Partivalg modellert som funksjon av inntekt.
   mod2<-glm(formula=FrP~Skepsis+Utgjevn+Inntekt,

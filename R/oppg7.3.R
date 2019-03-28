@@ -1,5 +1,5 @@
 oppg7.3<-function(){
-  data(kap7)
+  data(kap7, envir = environment())
   kap7 <- kap7
 
   #Innvandringsskepsis modellert som funksjon av utdanning.
