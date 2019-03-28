@@ -1,6 +1,6 @@
 fig9.1<-function(){
   #Last inn data
-  data(kap9)
+  data(kap9, envir = environment())
   kap9 <- kap9
 
   #Estimer modell

@@ -1,6 +1,6 @@
 fig10.1 <- function(){
   #Laste inn data
-  data(kap10)
+  data(kap10, envir = environment())
   kap10 <- kap10
 
   #Estimere modellen
@@ -14,7 +14,7 @@ fig10.1 <- function(){
 
   #Prediksjoner
   preds <- predict(mod,
-                   se.fit = T,
+                   se.fit = TRUE,
                    newdata = nyedata)
 
   lav <- preds$fit-1.96*preds$se.fit
@@ -31,8 +31,8 @@ fig10.1 <- function(){
        xlim = c(1,10),
        ylim = c(-4,2),
        xlab = "Innvandringsskepsis",
-       ylab = "Logodds for å stemme FrP (logit(p))",
-       main = "Effekten av innvandringsskepsis \npå å velge FrP framfor Høyre",
+       ylab = "Logodds for a stemme FrP (logit(p))",
+       main = "Effekten av innvandringsskepsis \npa a velge FrP framfor Hoyre",
        sub = "(a)")
   #Fig b
   plot(x = 1:10,
@@ -42,8 +42,8 @@ fig10.1 <- function(){
        xlim = c(1,10),
        ylim = c(-4,2),
        xlab = "Innvandringsskepsis",
-       ylab = "Logodds for å stemme FrP (logit(p))",
-       main = "Effekten av innvandringsskepsis \npå å velge FrP framfor Høyre",
+       ylab = "Logodds for a stemme FrP (logit(p))",
+       main = "Effekten av innvandringsskepsis \npa a velge FrP framfor Hoyre",
        sub = "(b)")
   lines(lav, lty = 2)
   lines(hoy, lty = 2)
@@ -56,8 +56,8 @@ fig10.1 <- function(){
        xlim = c(1,10),
        ylim = c(0,1),
        xlab = "Innvandringsskepsis",
-       ylab = "Sannsynlighet for å stemme FrP (p)",
-       main = "Effekten av innvandringsskepsis \npå å velge FrP framfor Høyre",
+       ylab = "Sannsynlighet for a stemme FrP (p)",
+       main = "Effekten av innvandringsskepsis \npa a velge FrP framfor Hoyre",
        sub = "(c)")
 
 
@@ -68,8 +68,8 @@ fig10.1 <- function(){
        xlim = c(1,10),
        ylim = c(0,1),
        xlab = "Innvandringsskepsis",
-       ylab = "Sannsynlighet for å stemme FrP (p)",
-       main = "Effekten av innvandringsskepsis \npå å velge FrP framfor Høyre",
+       ylab = "Sannsynlighet for a stemme FrP (p)",
+       main = "Effekten av innvandringsskepsis \npa a velge FrP framfor Hoyre",
        sub = "(d)")
   lines(exp(lav)/(1+(exp(lav))), lty = 2)
   lines(exp(hoy)/(1+(exp(hoy))), lty = 2)
@@ -81,8 +81,8 @@ fig10.1 <- function(){
        yaxt = "n",
        bty = "n",
        xlab = "Innvandringsskepsis",
-       ylab = "Sannsynlighet for å stemme FrP (p)",
-       main = "Effekten av innvandringsskepsis \npå å velge FrP framfor Høyre",
+       ylab = "Sannsynlighet for a stemme FrP (p)",
+       main = "Effekten av innvandringsskepsis \npa a velge FrP framfor Hoyre",
        sub = "(e)")
   p<-seq(0, 1, by=0.1)
   axis(side=2,
@@ -97,8 +97,8 @@ fig10.1 <- function(){
        yaxt = "n",
        bty = "n",
        xlab = "Innvandringsskepsis",
-       ylab = "Sannsynlighet for å stemme FrP (p)",
-       main = "Effekten av innvandringsskepsis \npå å velge FrP framfor Høyre",
+       ylab = "Sannsynlighet for a stemme FrP (p)",
+       main = "Effekten av innvandringsskepsis \npa a velge FrP framfor Hoyre",
        sub = "(f)")
   lines(lav, lty = 2)
   lines(hoy, lty = 2)
