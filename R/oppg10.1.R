@@ -2,13 +2,13 @@ oppg10.1<-function(){
   data(kap10, envir = environment())
   kap10 <- kap10
 
-  #Partivalg modellert som funksjon av skepsis og utgjevn.
-  mod1<-glm(formula=FrP~Skepsis+Utgjevn,
+  #Partivalg modellert som funksjon av skepsis og utjevn.
+  mod1<-glm(formula=FrP~Skepsis+Utjevn,
             data=kap10,
             family = binomial(link="logit"))
 
   #Partivalg modellert som funksjon av inntekt.
-  mod2<-glm(formula=FrP~Skepsis+Utgjevn+Inntekt,
+  mod2<-glm(formula=FrP~Skepsis+Utjevn+Inntekt,
             data=kap10,
             family = binomial(link="logit"))
 
@@ -16,11 +16,11 @@ oppg10.1<-function(){
   summary(mod1)
   summary(mod2)
 
-  #Sjekk korrelasjon mellom inntekt og utgjevn, samt inntekt og partivalg
-  cor.test(kap10$Utgjevn, kap10$Inntekt, na.rm=T)
+  #Sjekk korrelasjon mellom inntekt og utjevn, samt inntekt og partivalg
+  cor.test(kap10$Utjevn, kap10$Inntekt, na.rm=T)
   cor.test(kap10$FrP, kap10$Inntekt, na.rm=T)
 
   #Svar
-  paste("Effekten av holdning til inntektsutgjevning svekkes og er ikke lenger signifikant. Dette er fordi respondenter med lavere inntekt er mer positive til utgjevnende tiltak samtidig som Fremskrittspartiets velgere i gjennomsnitt tjener mindre enn Hoyre-velgerne.")
+  paste("Effekten av holdning til inntektsutjevning svekkes og er ikke lenger signifikant. Dette er fordi respondenter med lavere inntekt er mer positive til utjevnende tiltak samtidig som Fremskrittspartiets velgere i gjennomsnitt tjener mindre enn Hoyre-velgerne.")
 }
 

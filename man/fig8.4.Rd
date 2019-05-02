@@ -40,7 +40,7 @@ Silje Synnøve Lyder Hermansen
        ylim = c(3,6),
        xlab = "Politisk TV-titting",
        ylab = "Innvandringsskepsis",
-       main = "Effekt av mediaforbruk på innvandringsskepsis")
+       main = "Effekt av mediebruk på innvandringsskepsis")
   lines(y = pred.TV[,"lwr"],
         x = seq(0,7,0.1),
         lty=2)

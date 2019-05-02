@@ -3,13 +3,13 @@ oppg10.3<-function(){
   kap10 <- kap10
 
   #Partivalg modellert som funksjon av inntekt.
-  mod2<-glm(formula=FrP~Skepsis+Utgjevn+Inntekt,
+  mod2<-glm(formula=FrP~Skepsis+Utjevn+Inntekt,
             data=kap10,
             family = binomial(link="logit"))
 
   #Definere hypotetisk datasett
   nyedata<-data.frame(Skepsis=mean(kap10$Skepsis, na.rm=T),
-                      Utgjevn=mean(kap10$Utgjevn, na.rm=T),
+                      Utjevn=mean(kap10$Utjevn, na.rm=T),
                       Inntekt=c(5, 6)
   )
 

@@ -23,7 +23,7 @@ fig8.4<-function(){
        ylim = c(3,6),
        xlab = "Politisk TV-titting",
        ylab = "Innvandringsskepsis",
-       main = "Effekt av mediaforbruk pa innvandringsskepsis")
+       main = "Effekt av mediebruk pa innvandringsskepsis")
   lines(y = pred.TV[,"lwr"],
         x = seq(0,7,0.1),
         lty=2)

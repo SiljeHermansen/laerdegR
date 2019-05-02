@@ -4,13 +4,13 @@ fig10.1 <- function(){
   kap10 <- kap10
 
   #Estimere modellen
-  mod<-glm(FrP~Skepsis+Utgjevn,
+  mod<-glm(FrP~Skepsis+Utjevn,
            data=kap10,
            family = binomial(link = "logit"))
 
   #Hypotetisk datasett
   nyedata<-data.frame(Skepsis=1:10,
-                      Utgjevn=3)
+                      Utjevn=3)
 
   #Prediksjoner
   preds <- predict(mod,
