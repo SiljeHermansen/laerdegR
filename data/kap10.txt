@@ -1,4 +1,4 @@
-"FrP" "Skepsis" "Utgjevn" "Inntekt" "Utdanning" "Kvinne"
+"FrP" "Skepsis" "Utjevn" "Inntekt" "Utdanning" "Kvinne"
 "1" 1 3 2 6 9 0
 "4" 0 5 2 1 13 0
 "5" 1 4 2 3 12 0
