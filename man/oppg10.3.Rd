@@ -20,13 +20,13 @@ Silje Synnøve Lyder Hermansen
   data(kap10)
 
   #Partivalg modellert som funksjon av inntekt.
-  mod2<-glm(formula=FrP~Skepsis+Utgjevn+Inntekt,
+  mod2<-glm(formula=FrP~Skepsis+Utjevn+Inntekt,
             data=kap10,
             family = binomial(link="logit"))
 
   #Definere hypotetisk datasett
   nyedata<-data.frame(Skepsis=mean(kap10$Skepsis, na.rm=TRUE),
-                      Utgjevn=mean(kap10$Utgjevn, na.rm=TRUE),
+                      Utjevn=mean(kap10$Utjevn, na.rm=TRUE),
                       Inntekt=c(5, 6)
   )
 
