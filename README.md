@@ -26,7 +26,7 @@ install.packages("C:/Downloads/laerdegR_0.1.0.zip", repos = NULL, type = "binary
 
 
 ### Installere direkte fra GitHub
-Denne løsningen krever flere R-installasjoner.
+Denne løsningen krever mer manøvrering.
 * I nettleseren: Begynn med å laste ned og installere [RTools](https://cran.r-project.org/bin/windows/Rtools/) uten å åpne RStudio.
 * I RStudio: installere `devtools`-pakken og hent den inn fra biblioteket.
 ```
