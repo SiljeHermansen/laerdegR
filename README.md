@@ -1,5 +1,5 @@
 # `laerdegR`
-"Lær deg R" er en innføringsbok i statistikkprogrammet R utgitt av Fagbokforlaget (2019). 
+["Lær deg R"](https://www.fagbokforlaget.no/L%C3%A6r-deg-R/I9788245022131) er en innføringsbok i statistikkprogrammet R utgitt av Fagbokforlaget (2019). 
 
 `laerdegR` er en nettressurs som gir deg tilgang til datasett og oppgaveløsninger som hører til boka. Nettressursen kommer som en egen R-pakke som du kan installere her.
 
